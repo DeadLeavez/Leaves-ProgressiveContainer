@@ -17,12 +17,12 @@ kappa: 2xgamma, 4xbig pipe pipe, 2xaspect company key, 2 x far foward, red keyca
 I personally run with these container sizes.
 
 ```
-pouch: 2x3
-alpha: 3x3
-beta:  3x4
-epsi:  3x5
-gamma: 3x6
-kappa: 3x7
+pouch: 2x2
+alpha: 2x3
+beta:  3x3
+epsi:  3x4
+gamma: 3x5
+kappa: 3x6
 ```
 
 You need another mod (like SVM) to edit container sizes.
