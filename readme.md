@@ -47,3 +47,7 @@ If you have messages like ``Could not find recipe: <ID> for area type`` they are
 
 - Updated version for 3.8.0
 - Adjusted the config file to new format that allows comments for easier editing.
+
+## 1.2.1
+
+- Allow for changing where the crafts are being done.
