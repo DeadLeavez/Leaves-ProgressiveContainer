@@ -1,0 +1,290 @@
+{
+	"removeContainersFromPeacekeeper": true, //Does what it says on the tin. Removes any container sales from peacekeeper
+	"craftingTime": 300, //Time to craft in seconds. 
+	"secure_containers": {
+		"pouch": {
+			"requirements": [ //What you need to craft the container in question.
+				{
+					"type": "Item",
+					"templateId": "5e2af4d286f7746d4159f07a",//Aramid fiber fabric
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af41e86f774755a234b67",//Cordura polyamide fabric
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af47786f7746d404f3aaa",//Fleece Fabric
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af4a786f7746d3f3c3400",//Ripstop fabric
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "57347c1124597737fb1379e3",//Duct tape
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5c12688486f77426843c7d32",//Paracord
+					"count": 2
+				},
+				{
+					"type": "Area", //Hideout area.
+					"areaType": 11, //Where it's made. See https://hub.sp-tarkov.com/doc/entry/4-resources-hideout-areas-ids/ for more options
+					"requiredLevel": 1
+				}
+			]
+		},
+		"alpha": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "5732ee6a24597719ae0c0281",//Waist pouch
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "573477e124597737dd42e191",//PC CPU
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5734779624597737e04bf329",//CPU fan
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5c06782b86f77426df5407d2",//Capacitors
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "6389c70ca33d8c4cdf4932c6",//Electronic components
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "57347baf24597738002c6178",//RAM
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "590a3b0486f7743954552bdb",//Printed circuit board
+					"count": 3
+				},
+				{
+					"type": "Item",
+					"templateId": "5c06779c86f77426e00dd782",//Bundle of wires
+					"count": 4
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 1
+				}
+			]
+		},
+		"beta": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "544a11ac4bdc2d470e8b456a",//Secure container Alpha
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "56742c324bdc2d150f8b456d",//Broken GPhone smartphone
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5d1b304286f774253763a528",//Working LCD
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "57347c5b245977448d35f6e1",//Bolts
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "57347c77245977448d35f6e2",//Screw nuts
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "59e35ef086f7741777737012",//Pack of screws
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5d1b39a386f774252339976f",//Silicone tube
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5734795124597738002c6176",//Insulating tape
+					"count": 2
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 2
+				}
+			]
+		},
+		"epsilon": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "5857a8b324597729ab0a0e7d",//Secure container Beta
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "5d1b2ffd86f77425243e8d17",//NIXXOR lens
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "590c5c9f86f77477c91c36e7",//WD-40 (400ml)
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af22086f7746d3f3c33fa",//Tube of Poxeram cold welding
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5d1b313086f77425227d1678",//Phase control relay
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "59e35cbb86f7741778269d83",//Corrugated hose
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5d1c774f86f7746d6620f8db",//Radiator helix
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af29386f7746d4159f077",//KEKTAPE duct tape
+					"count": 2
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 2
+				}
+			]
+		},
+		"gamma": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "59db794186f77448bc595262",//Secure container Epsilon
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "5d0377ce86f774186372f689",//Iridium military thermal vision module
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "62a0a16d0b9d3c46de5b6e97",//Military flash drive
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2aee0a86f774755a234b62",//Cyclon rechargeable battery
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5d03775b86f774203e7e0c4b",//Phased array element
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "59e366c186f7741778269d85",//Piece of plexiglass
+					"count": 10
+				},
+				{
+					"type": "Item",
+					"templateId": "6389c7750ef44505c87f5996",//Microcontroller board
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "590c37d286f77443be3d7827",//SAS drive
+					"count": 2
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 3
+				}
+			]
+		},
+		"kappa": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "5857a8bc2459772bad15db29",//Secure container Gamma
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "5c052f6886f7746b1e3db148",//Military COFDM Wireless Signal Transmitter
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5d03794386f77420415576f5",//6-STEN-140-M military battery
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5c0530ee86f774697952d952",//LEDX Skin Transilluminator
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5d0376a486f7747d8050965c",//Military circuit board
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "619cbf476b8a1b37a54eebf8",//Military corrugated tube
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5d0375ff86f774186372f685",//Military cable
+					"count": 5
+				},
+				{
+					"type": "Item",
+					"templateId": "5d03784a86f774203e7e0c4d",//Military gyrotachometer
+					"count": 1
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 3
+				}
+			]
+		}
+	}
+}
