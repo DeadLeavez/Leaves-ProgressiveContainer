@@ -1,16 +1,16 @@
-import { DependencyContainer } from "tsyringe";
-import { Ilogger } from "@spt-aki/models/spt/utils/Ilogger";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import type { DependencyContainer } from "tsyringe";
+import type { ILogger } from "@spt-aki/models/spt/utils/ILogger";
+import type { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
+import type { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 
-import { VFS } from "@spt-aki/utils/VFS";
+import type { VFS } from "@spt-aki/utils/VFS";
 import { jsonc } from "jsonc";
-import * as path from "path";
+import * as path from "node:path";
 import { LogTextColor } from "@spt-aki/models/spt/logging/LogTextColor";
 
 class ProgressiveContainer implements IPostDBLoadMod
 {
-    private logger: Ilogger;
+    private logger: ILogger;
     private db: DatabaseServer;
 
     private craftprefx = "LeavesCraft_ProgressiveContainer"
@@ -22,13 +22,13 @@ class ProgressiveContainer implements IPostDBLoadMod
     private config: any;
     private vfs: VFS;
 
-    private createCraft ( container: string ): any
+    private createCraft( container: string ): any
     {
         if ( this.config.secure_containers[ container ] )
         {
             const area = this.getAreaID( container );
-            this.printColor( "[ProgressiveContainer] \tAdding craft for: " + container, LogTextColor.CYAN );
-            let craftToAdd =
+            this.printColor( `[ProgressiveContainer] \tAdding craft for: ${ container }`, LogTextColor.CYAN );
+            const craftToAdd =
             {
                 _id: this.craftprefx + container,
                 areaType: area,
@@ -47,28 +47,28 @@ class ProgressiveContainer implements IPostDBLoadMod
         }
         return null;
     }
-    getAreaID ( containerID: string ): number
+    getAreaID( containerID: string ): number
     {
         const container = this.config.secure_containers[ containerID ];
+
+        //Find the area ID for the container from the list of requirements.
+        for ( const requirement of container.requirements )
         {
-            //Find the area ID for the container from the list of requirements.
-            for( const requirement of container.requirements )
+            if ( requirement.areaType )
             {
-                if ( requirement.areaType )
-                {
-                    return requirement.areaType;
-                }
+                return requirement.areaType;
             }
         }
-        this.printColor( "[ProgressiveContainer] ERROR: Could not find areaType for: " + containerID, LogTextColor.RED );
+
+        this.printColor( `[ProgressiveContainer] ERROR: Could not find areaType for: ${containerID}`, LogTextColor.RED );
         return 10;
     }
 
-    public postDBLoad ( container: DependencyContainer ): void 
+    public postDBLoad( container: DependencyContainer ): void 
     {
         // Get stuff from container
         this.db = container.resolve<DatabaseServer>( "DatabaseServer" );
-        this.logger = container.resolve<Ilogger>( "WinstonLogger" );
+        this.logger = container.resolve<ILogger>( "WinstonLogger" );
 
 
         this.vfs = container.resolve<VFS>( "VFS" );
@@ -88,9 +88,9 @@ class ProgressiveContainer implements IPostDBLoadMod
 
         this.printColor( "[ProgressiveContainer] ProgressiveContainer Starting:" );
 
-        for ( let container in this.containers )
+        for ( const container in this.containers )
         {
-            let craft = this.createCraft( container );
+            const craft = this.createCraft( container );
             this.crafts.push( craft );
         }
 
@@ -101,11 +101,11 @@ class ProgressiveContainer implements IPostDBLoadMod
         }
     }
 
-    private removeContainerFromPK (): void
+    private removeContainerFromPK(): void
     {
         const PKID = "5935c25fb3acc3127c3d8cd9";
         const assort = this.db.getTables().traders[ PKID ].assort.items
-        let toDelete = [];
+        const toDelete = [];
 
         for ( let entry = 0; entry < assort.length; entry++ )
         {
@@ -125,7 +125,7 @@ class ProgressiveContainer implements IPostDBLoadMod
         //this.logger.info( "Size after:" + assort.length )
     }
 
-    private printColor ( message: string, color: LogTextColor = LogTextColor.GREEN )
+    private printColor( message: string, color: LogTextColor = LogTextColor.GREEN )
     {
         this.logger.logWithColor( message, color );
     }
