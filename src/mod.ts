@@ -1,12 +1,12 @@
 import type { DependencyContainer } from "tsyringe";
-import type { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import type { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import type { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import type { ILogger } from "@spt/models/spt/utils/ILogger";
+import type { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import type { DatabaseServer } from "@spt/servers/DatabaseServer";
 
-import type { VFS } from "@spt-aki/utils/VFS";
+import type { VFS } from "@spt/utils/VFS";
 import { jsonc } from "jsonc";
 import * as path from "node:path";
-import { LogTextColor } from "@spt-aki/models/spt/logging/LogTextColor";
+import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 
 class ProgressiveContainer implements IPostDBLoadMod
 {

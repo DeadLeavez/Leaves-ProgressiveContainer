@@ -51,3 +51,8 @@ If you have messages like ``Could not find recipe: <ID> for area type`` they are
 ## 1.2.1
 
 - Allow for changing where the crafts are being done.
+
+## 1.2.2
+
+- Updated name and folders to match package.json standards.
+- Updated for 3.9.0
