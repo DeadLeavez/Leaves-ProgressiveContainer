@@ -250,6 +250,54 @@
 					"requiredLevel": 3
 				}
 			]
+		},
+		"theta": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "5c093ca986f7740a1867ab12", //Kappa container
+					"count": 2
+				},
+				{"type": "Item",
+					"templateId": "62a61bbf8ec41a51b34758d2", //Big pipe pipe (UPDATE ME!)
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "64ce572331dd890873175115",   //Kaban aspect key (UPDATE ME!)
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "6389c7f115805221fb410466", //Far forward something (UPDATE ME!)
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "6389c85357baa773a825b356", //Far forward second thing (UPDATE ME!)
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5c1d0efb86f7744baf2e7b7b", //Red keycard (UPDATE ME!)
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "5c1e495a86f7743109743dfb", //Violet keycard (UPDATE ME!)
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "5c1d0c5f86f7744bb2683cf0", //Blue keycard (UPDATE ME!)
+					"count": 1
+				},
+				{
+					"type": "Area",
+					"areaType": 10,
+					"requiredLevel": 3
+				}
+			]
 		}
 	}
 }

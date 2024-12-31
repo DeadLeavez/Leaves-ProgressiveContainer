@@ -1,10 +1,10 @@
 {
     "name": "progressive_container",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "leaves",
-    "sptVersion": ">= 3.9.0",
+    "sptVersion": ">= 3.10.0",
     "scripts": {
         "setup": "npm i",
         "build": "node ./build.mjs",

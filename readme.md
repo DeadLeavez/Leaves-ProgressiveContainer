@@ -56,3 +56,7 @@ If you have messages like ``Could not find recipe: <ID> for area type`` they are
 
 - Updated name and folders to match package.json standards.
 - Updated for 3.9.0
+
+## 1.2.3
+
+- Updated for 3.10.0
