@@ -1,6 +1,6 @@
 {
 	"removeContainersFromPeacekeeper": true, //Does what it says on the tin. Removes any container sales from peacekeeper
-	"craftingTime": 300, //Time to craft in seconds. 
+	"craftingTime": 7200, //Time to craft in seconds.
 	"secure_containers": {
 		"pouch": {
 			"requirements": [ //What you need to craft the container in question.
@@ -33,6 +33,16 @@
 					"type": "Item",
 					"templateId": "5c12688486f77426843c7d32",//Paracord
 					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2af37686f774755a234b65",//SurvL Survivor Lighter
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "590a373286f774287540368b",//Dry fuel
+					"count": 4
 				},
 				{
 					"type": "Area", //Hideout area.
@@ -153,8 +163,8 @@
 				},
 				{
 					"type": "Item",
-					"templateId": "590c5c9f86f77477c91c36e7",//WD-40 (400ml)
-					"count": 2
+					"templateId": "590c5bbd86f774785762df04",//WD-40 (100ml)
+					"count": 4
 				},
 				{
 					"type": "Item",
@@ -162,18 +172,18 @@
 					"count": 4
 				},
 				{
-					"type": "Item",
-					"templateId": "5d1b313086f77425227d1678",//Phase control relay
-					"count": 5
+					"type": "Item", 
+					"templateId": "5733279d245977289b77ec24",//Car battery
+					"count": 3
 				},
 				{
 					"type": "Item",
-					"templateId": "59e35cbb86f7741778269d83",//Corrugated hose
+					"templateId": "5d1b313086f77425227d1678",//Phase control relay
 					"count": 4
 				},
 				{
 					"type": "Item",
-					"templateId": "5d1c774f86f7746d6620f8db",//Radiator helix
+					"templateId": "590c651286f7741e566b6461",//Slim diary
 					"count": 5
 				},
 				{
@@ -197,23 +207,23 @@
 				},
 				{
 					"type": "Item",
-					"templateId": "5d0377ce86f774186372f689",//Iridium military thermal vision module
+					"templateId": "57347ca924597744596b4e71",//Graphics card
 					"count": 2
 				},
 				{
 					"type": "Item",
-					"templateId": "62a0a16d0b9d3c46de5b6e97",//Military flash drive
-					"count": 2
+					"templateId": "5d1c774f86f7746d6620f8db",//Radiator helix
+					"count": 4
 				},
 				{
 					"type": "Item",
-					"templateId": "5e2aee0a86f774755a234b62",//Cyclon rechargeable battery
-					"count": 2
+					"templateId": "590a3efd86f77437d351a25b",//Gas analyzer
+					"count": 4
 				},
 				{
 					"type": "Item",
-					"templateId": "5d03775b86f774203e7e0c4b",//Phased array element
-					"count": 2
+					"templateId": "59e35cbb86f7741778269d83",//Corrugated hose
+					"count": 4
 				},
 				{
 					"type": "Item",
@@ -222,7 +232,7 @@
 				},
 				{
 					"type": "Item",
-					"templateId": "6389c7750ef44505c87f5996",//Microcontroller board
+					"templateId": "590c5c9f86f77477c91c36e7",//WD-40 (400ml)
 					"count": 2
 				},
 				{
@@ -246,17 +256,115 @@
 				},
 				{
 					"type": "Item",
+					"templateId": "6389c7750ef44505c87f5996",//Microcontroller board
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "61bf7c024770ee6f9c6b8b53",//Secure magnetic tape cassette
+					"count": 3
+				},
+				{
+					"type": "Item",
+					"templateId": "5d03775b86f774203e7e0c4b",//Phased array element
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5c0530ee86f774697952d952",//LEDX Skin Transilluminator
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5d0377ce86f774186372f689",//Iridium military thermal vision module
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "62a0a16d0b9d3c46de5b6e97",//Military flash drive
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2aee0a86f774755a234b62",//Cyclon rechargeable battery
+					"count": 2
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 3
+				}
+			]
+		},
+		"unheard": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "665ee77ccf2d642e98220bca",//Secure container Unheard Gamma 
+					"count": 1
+				},
+				{
+					"type": "Item",
+					"templateId": "6389c7750ef44505c87f5996",//Microcontroller board
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "61bf7c024770ee6f9c6b8b53",//Secure magnetic tape cassette
+					"count": 3
+				},
+				{
+					"type": "Item",
+					"templateId": "5d03775b86f774203e7e0c4b",//Phased array element
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "5c0530ee86f774697952d952",//LEDX Skin Transilluminator
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5d0377ce86f774186372f689",//Iridium military thermal vision module
+					"count": 2
+				},
+				{
+					"type": "Item",
+					"templateId": "62a0a16d0b9d3c46de5b6e97",//Military flash drive
+					"count": 4
+				},
+				{
+					"type": "Item",
+					"templateId": "5e2aee0a86f774755a234b62",//Cyclon rechargeable battery
+					"count": 2
+				},
+				{
+					"type": "Area",
+					"areaType": 11,
+					"requiredLevel": 3
+				}
+			]
+		},
+		"theta": {
+			"requirements": [
+				{
+					"type": "Item",
+					"templateId": "5c093ca986f7740a1867ab12",//Secure container Kappa
+					"count": 1
+				},
+				{
+					"type": "Item",
 					"templateId": "5c052f6886f7746b1e3db148",//Military COFDM Wireless Signal Transmitter
 					"count": 2
 				},
 				{
 					"type": "Item",
 					"templateId": "5d03794386f77420415576f5",//6-STEN-140-M military battery
-					"count": 2
+					"count": 3
 				},
 				{
 					"type": "Item",
-					"templateId": "5c0530ee86f774697952d952",//LEDX Skin Transilluminator
+					"templateId": "6389c85357baa773a825b356",//Advanced current converter
 					"count": 2
 				},
 				{
@@ -277,14 +385,21 @@
 				{
 					"type": "Item",
 					"templateId": "5d03784a86f774203e7e0c4d",//Military gyrotachometer
-					"count": 1
+					"count": 3
 				},
 				{
 					"type": "Area",
-					"areaType": 11,
+					"areaType": 11,//Where it's made. See https://hub.sp-tarkov.com/doc/entry/4-resources-hideout-areas-ids/ for more options
+					"requiredLevel": 3
+				},
+				{
+					"type": "Area",
+					"areaType": 20,
 					"requiredLevel": 3
 				}
 			]
+			//Heavily recommend using my preset for configurable inventories:https://discord.com/channels/444499598636220416/1012453974986731620
+			//https://discord.gg/SvQ7KMzBEj
 		}
 	}
 }

@@ -59,4 +59,9 @@ If you have messages like ``Could not find recipe: <ID> for area type`` they are
 
 ## 1.2.3
 
-- Updated for 3.10.0
+- Updated for 3.10.x
+
+## 1.2.4
+
+- Added support for unheard container (not enabled by default right now)
+- Updated S_Gamez's community config. Thanks.
