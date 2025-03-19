@@ -1,6 +1,6 @@
 {
     "name": "progressive_container",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "leaves",
@@ -8,6 +8,7 @@
     "scripts": {
         "setup": "npm i",
         "build": "node ./build.mjs",
+        "updatedeps": "npx tsc --module node16 updatedeps.ts && node updatedeps.js",
         "buildinfo": "node ./build.mjs --verbose"
     },
     "devDependencies": {

@@ -5,7 +5,7 @@ import type { DatabaseServer } from "@spt/servers/DatabaseServer";
 import type { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
 import { JsonUtil } from "@spt/utils/JsonUtil";
 
-import type { VFS } from "@spt/utils/VFS";
+import { VFS } from "./deps/VFS";
 import { jsonc } from "jsonc";
 import * as path from "node:path";
 import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
@@ -76,7 +76,7 @@ class ProgressiveContainer implements IPostDBLoadMod
         this.hashUtil = container.resolve<HashUtil>( "HashUtil" );
         const preSptModLoader = container.resolve<PreSptModLoader>( "PreSptModLoader" );
 
-        this.vfs = container.resolve<VFS>( "VFS" );
+        this.vfs = new VFS();
         const configFile = path.resolve( __dirname, "../config/config.jsonc" );
         this.setModFolder( `${ preSptModLoader.getModPath( "leaves-progressive_container" ) }/` );
         this.config = jsonc.parse( this.vfs.readFile( configFile ) );
@@ -102,6 +102,10 @@ class ProgressiveContainer implements IPostDBLoadMod
         for ( const container in this.containers )
         {
             const craft = this.createCraft( container );
+            if ( craft === null )
+            {
+                continue;
+            }
             this.crafts.recipes.push( craft );
         }
 
